@@ -1,0 +1,130 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/parentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="490dp"
+        android:layout_margin="0dp"
+        tools:context=".MainActivity" >
+
+        <TextView
+            android:id="@+id/checkRoot"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textSize="14sp"
+            android:layout_margin="0dp"
+            android:background="@drawable/black_background"
+            android:padding="48dp"
+            android:fontFamily="serif-monospace"
+            android:textColor="#fff"
+            android:text="@string/note_root_is_required"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/errorLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="16dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="@string/application_cannot_work_without_root"
+            tools:targetApi="lollipop"
+            android:alpha="0"/>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/about"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background"
+            android:padding="4dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="cursive"
+            tools:targetApi="jelly_bean" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/container"
+                android:layout_below="@id/checkRoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0">
+
+
+                <TextView
+                    android:id="@+id/textviewAdbStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_alignParentTop="true"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/adb_status"
+                    android:background="@drawable/background"
+                    android:padding="4dp"
+                    android:textColor="#000"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:id="@+id/textviewAdbStatusResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/textviewAdbStatus"
+                    android:layout_alignBaseline="@id/textviewAdbStatus"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/adb_status"
+                    android:padding="4dp"
+                    android:textColor="#000"
+                    android:layout_toEndOf="@id/textviewAdbStatus"
+                    android:layout_marginStart="16dp" />
+
+                <Button
+                    android:id="@+id/btnAdb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_margin="64dp"
+                    android:textColor="#000"
+                    android:layout_below="@id/textviewAdbStatus"
+                    android:background="@drawable/background"
+                    android:text="@string/start_ADB" tools:targetApi="lollipop"/>
+
+                <TextView
+                    android:id="@+id/textviewInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnAdb"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp"
+                    android:textColor="@android:color/holo_blue_bright"
+                    tools:ignore="UnusedAttribute"
+                    android:layout_marginStart="16dp" />
+
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

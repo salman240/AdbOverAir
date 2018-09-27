@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Adb Over Air</string>
+    <string name="label">Adb Over Air by Salman</string>
+    <string name="note_root_is_required">NOTE :- Root is required</string>
+    <string name="start_adb">Start Adb on tcp port 5555</string>
+    <string name="stop_adb">Stop Adb on tcp port 5555</string>
+    <string name="start_ADB">START ADB</string>
+    <string name="stop_ADB">STOP ADB</string>
+    <string name="cmd"><![CDATA[CMD>_ adb connect *ip address*]]></string>
+    <string name="about">by Salman Yousaf</string>
+    <string name="application_cannot_work_without_root">Application cannot work without Root! Retry on Rooted Device... Thanks!</string>
+    <string name="go_to_terminal_and_type_adb_connect_ip_address">Go to Terminal and Type \'adb connect *ip address*\'</string>
+    <string name="adb_status">Adb Status:</string>
+</resources>
