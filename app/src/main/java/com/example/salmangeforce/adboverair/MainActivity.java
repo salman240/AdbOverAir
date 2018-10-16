@@ -191,9 +191,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onBackPressed() {
         if(isOncePressed)
         {
-            if(notificationManager != null) {
-                notificationManager.cancel(1);
-            }
             stopAdb();
             super.onBackPressed();
             return;
@@ -355,7 +352,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textViewInfo.setVisibility(View.INVISIBLE);
         //Toast.makeText(this, getIpAddress(), Toast.LENGTH_SHORT).show();
         builder.setContentTitle(title);
-        notificationManager.notify(1, builder.build());
+        notificationManager.cancel(1);
     }
 
 
