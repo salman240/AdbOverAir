@@ -191,11 +191,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onBackPressed() {
         if(isOncePressed)
         {
-            /*
             if(notificationManager != null) {
                 notificationManager.cancel(1);
             }
-            */
             stopAdb();
             super.onBackPressed();
             return;
